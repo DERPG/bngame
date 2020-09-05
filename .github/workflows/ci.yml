@@ -19,7 +19,7 @@ jobs:
 
     - run: npm install
 
-    - run: gatsby build
+    - run: npm run build
 
     - name: Publish
       if: github.event_name != 'pull_request'
