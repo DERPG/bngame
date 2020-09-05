@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/pages/game.js"],"names":["Home"],"mappings":"2FAAA,wEAEe,SAASA,IACtB,OAAO","file":"component---src-pages-game-js-74d8588d1f2928f4529e.js","sourcesContent":["import React from \"react\"\n\nexport default function Home() {\n  return <div>Game</div>\n}\n"],"sourceRoot":""}
