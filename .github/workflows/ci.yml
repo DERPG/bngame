@@ -27,3 +27,4 @@ jobs:
       with:
         publish_dir: ./public
         publish_branch: gh-pages
+        deploy_key: ${{ secrets.PAGES_DEPLOY_KEY }}
