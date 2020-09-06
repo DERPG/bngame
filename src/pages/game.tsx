@@ -51,6 +51,9 @@ class Game extends React.Component {
     function update() {
       ball.x += 1
     }
+    
+    var ticks = 0;
+    var frame = 0;
 
     function draw() {
       ctx.fillStyle = 'rgb(0, 0, 0)'
@@ -59,7 +62,11 @@ class Game extends React.Component {
 
       ball.draw()
 
-      ctx.drawImage(runSprite, 0, 0, 23, 32, 100, 100, 23, 32);
+      ticks++
+      if (ticks % 3 == 0) {
+        frame++
+      }
+      ctx.drawImage(runSprite, (frame % 6) * 23, 0, 23, 32, 100, 100, 23, 32)
     }
 
     loop(null);
